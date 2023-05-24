@@ -5,7 +5,7 @@ This project is a TTS-MMS testing lab for study Facebook's TTSMMS project specif
 ## Install
 clone this project
 ```bash
-git clone https://github.com/NoerNova/ttsmms_lab.git
+git clone https://github.com/haohaaorg/ttsmms_lab.git
 ```
 
 ```bash 
@@ -22,7 +22,7 @@ mkdir -p model/shn/ && wget -qO- https://dl.fbaipublicfiles.com/mms/tts/shn.tar.
 ```
 
 ## Usage
-use this [shn_tts.py](https://github.com/NoerNova/ttsmms_lab/blob/main/shn_tts.py) file or create a new one for using Shan's language model
+use this [shn_tts.py](https://github.com/haohaaorg/ttsmms_lab/blob/main/shn_tts.py) file or create a new one for using Shan's language model
 ```python
 from ttsmms import TTS
 
@@ -32,7 +32,7 @@ tts.synthesis("ၼုမ်ႇသိုၵ်းႁၢၼ် ႁဵတ်းၵ�
 # output: output/example_shn.wav file
 ```
 
-use this [eng_tts.py](https://github.com/NoerNova/ttsmms_lab/blob/main/eng_tts.py) file file or create a new one for using English's language model
+use this [eng_tts.py](https://github.com/haohaaorg/ttsmms_lab/blob/main/eng_tts.py) file file or create a new one for using English's language model
 ```python
 from ttsmms import TTS
 
@@ -44,7 +44,7 @@ tts.synthesis("speech", wav_path="output/example_eng.wav")
 
 #### or with combine 2 model, as this is a pre-train model which may not support all text or words the idea is to use both english and shan model for multilang in single line text
 
-* [shn_tts_combined.py](https://github.com/NoerNova/ttsmms_lab/blob/main/shn_tts_combined.py)
+* [shn_tts_combined.py](https://github.com/haohaaorg/ttsmms_lab/blob/main/shn_tts_combined.py)
   
 **don't forget to download english model from**
 ```bash
