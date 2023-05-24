@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 download tts model from facebookresearch and extract to ```model/```
 ```bash
-mkdir -p model/ && wget -qO- https://dl.fbaipublicfiles.com/mms/tts/shn.tar.gz | tar -xz -C model/ --strip-components 1
+mkdir -p model/shn/ && wget -qO- https://dl.fbaipublicfiles.com/mms/tts/shn.tar.gz | tar -xz -C model/shn/ --strip-components 1
 ```
 
 ## Usage
