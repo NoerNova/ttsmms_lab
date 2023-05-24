@@ -64,7 +64,7 @@ Run with GPU (NVIDIA-CUDA) make a difference in term of precision and accuracy, 
 - Run with local CPU (intel core-i5) - [example_CPU_local_run.wav](https://github.com/haohaaorg/ttsmms_lab/blob/main/output/CUDA_example/example_CPU_local_run.wav)
 - Run with GPU (Google Colab with CUDA) - [example_GPU_google_colab_run.wav](https://github.com/haohaaorg/ttsmms_lab/blob/main/output/CUDA_example/example_GPU_google_colab_run.wav)
 
-Google-Colab: [fairseq_lab.ipynb](https://github.com/haohaaorg/ttsmms_lab/blob/main/ipynb)
+Google-Colab: [fairseq_lab.ipynb](https://github.com/haohaaorg/ttsmms_lab/blob/main/fairseq_lab.ipynb)
 **- require python3.8**
 
 ## License
