@@ -1,6 +1,9 @@
 from ttsmms import TTS
 
-tts=TTS("./model/shn")
+tts = TTS("./model/shn")
 
-tts.synthesis("ၼုမ်ႇသိုၵ်းႁၢၼ် ႁဵတ်းၵၢၼ်ၵွၼ်းၶေႃၸိုင်ႈတႆး", wav_path="example2.wav")
-# output: example.wav file
+tts.synthesis(
+    "သမ်ႇမႃႇၵျၢမ်းလိၵ်ႈ ထႃႇဝရႃႉၽြႃး ထမ်းမၽြႃးပဵၼ်ၸဝ်ႈ",
+    wav_path="output/example_shn2.wav",
+)
+# output: output/example_shn.wav file

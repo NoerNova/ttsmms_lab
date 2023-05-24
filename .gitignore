@@ -153,3 +153,5 @@ cython_debug/
 
 
 model/
+.DS_Store
+.vscode/

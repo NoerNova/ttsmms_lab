@@ -7,3 +7,5 @@ torch
 torchvision
 Unidecode
 monotonic-align
+fasttext-langdetect
+pydub
