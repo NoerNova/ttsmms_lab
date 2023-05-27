@@ -2,16 +2,23 @@ from ttsmms import TTS
 from ftlangdetect import detect
 from pydub import AudioSegment
 import numpy as np
+import sys
+
+
+# text = "ၸၢမ်းတူၺ်း this is english word လိၵ်ႈတႆး"
+# text2 = "english letter containe english word english word"
+# text3 = "ၵူၼ်းဢမ်ႇမီးႁိူၼ်းတၢႆထပ်းၵၼ်ဝၼ်းလဵဝ်ဢမ်ႇယွမ်း သၢမ်ၵေႃႉတီႈဝဵင်းလႃႈသဵဝ်ႈ"
+# text4 = "ငဝ်ႈငုၼ်းၶွင်ႇသီႇဢဝ်ၶိုၼ်းၸိုင်ႈတႆး RCSS-SSA လႄႈ ပႃႇတီႇမႂ်ႇသုင်ၸိုင်ႈတႆး တပ်ႉသိုၵ်းၸိုင်ႈတႆး SSPP/SSA"
+
+if len(sys.argv) != 2:
+    print("Usage: python shn_tts_combined.py 'some Shan sentences'")
+    sys.exit(1)
+
+text = sys.argv[1]
+sentences = text.split()
 
 shn_model = TTS("./model/shn")
 eng_model = TTS("./model/eng")
-
-text = "ၸၢမ်းတူၺ်း this is english word လိၵ်ႈတႆး"
-text2 = "english letter containe english word english word"
-text3 = "ၵူၼ်းဢမ်ႇမီးႁိူၼ်းတၢႆထပ်းၵၼ်ဝၼ်းလဵဝ်ဢမ်ႇယွမ်း သၢမ်ၵေႃႉတီႈဝဵင်းလႃႈသဵဝ်ႈ"
-text4 = "ငဝ်ႈငုၼ်းၶွင်ႇသီႇဢဝ်ၶိုၼ်းၸိုင်ႈတႆး RCSS-SSA လႄႈ ပႃႇတီႇမႂ်ႇသုင်ၸိုင်ႈတႆး တပ်ႉသိုၵ်းၸိုင်ႈတႆး SSPP/SSA"
-
-sentences = text4.split()
 
 audio_segments = []
 synthesis_vector = []
@@ -39,4 +46,4 @@ for sentence in sentences:
 combined_audio = sum(audio_segments)
 
 # export
-combined_audio.export("output/output4.wav", format="wav")
+combined_audio.export("output/generate.wav", format="wav")
